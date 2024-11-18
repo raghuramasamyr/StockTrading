@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the packaged jar file into the container
-COPY target/StockTrading-1.0-SNAPSHOT.jar app.jar
+COPY target/StockTrading.jar app.jar
 
 # Expose the port the application runs on
 EXPOSE 8082
