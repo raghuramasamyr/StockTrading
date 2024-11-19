@@ -19,8 +19,8 @@ steps:
       - '-c'
       - |
         # Retrieve the service account key from Secret Manager
-        gcloud secrets versions access latest --secret="service-account-key" > /workspace/service-account-key.json
-        gcloud auth activate-service-account --key-file=/workspace/service-account-key.json
+        gcloud secrets versions access latest --secret="service-account-key-stock" > /workspace/service-account-key-stock.json
+        gcloud auth activate-service-account --key-file=/workspace/service-account-key-stock.json
         gcloud config set project $PROJECT_ID
         gcloud run deploy spring-boot-app --image gcr.io/$PROJECT_ID/spring-boot-app --platform managed --region us-central1 --allow-unauthenticated
     id: 'Deploy to Cloud Run'
