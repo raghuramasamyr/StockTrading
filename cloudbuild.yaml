@@ -26,4 +26,6 @@ steps:
 images:
   - 'gcr.io/$PROJECT_ID/spring-boot-app'
 
+logsBucket: 'gs://stocktrading-bucket'
+
 timeout: '1200s'
