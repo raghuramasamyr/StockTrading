@@ -27,8 +27,6 @@ steps:
 
 images:
   - 'gcr.io/$PROJECT_ID/spring-boot-app'
-logsBucket:
-  'gs://stocktrading-bucket'
 
 options:
   logging: CLOUD_LOGGING_ONLY
