@@ -27,5 +27,6 @@ images:
   - 'gcr.io/$PROJECT_ID/spring-boot-app'
 
 logsBucket: 'gs://stocktrading-bucket'
-
+substitutions:
+  GOOGLE_APPLICATION_CREDENTIALS: 'C:\Users\10749400\Downloads\bright-lattice-442114-n2-461635b8a821.json'
 timeout: '1200s'
